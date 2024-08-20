@@ -1,0 +1,54 @@
+.aboutbg {
+  background-image: url("/public/img/aboutus.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 400px;
+}
+.app {
+  text-align: center;
+}
+.app-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+.about-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+ 
+}
+.team-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card {
+  width: 32%;
+  margin: 20px 0px 20px 0px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .card{
+    width: 48%;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .card{
+    width: 100%;
+  }
+
+}

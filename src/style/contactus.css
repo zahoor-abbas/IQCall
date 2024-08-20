@@ -1,0 +1,90 @@
+.contactus {
+  text-align: center;
+}
+.contactushead {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+.container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+}
+.contactbg {
+  background-image: url("/public/img/services.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 400px;
+}
+.contacts-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.contacts-card {
+  width: 320px;
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+.contacts-card img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.contact-form{
+  display: flex; justify-content: space-between; flex-wrap: wrap ;padding: 0 30px; margin: 20px 0;
+}
+.contact-formleft{
+  width: 38%;
+}
+.contact-formleft form{
+  display: flex; flex-direction:column; gap: 16px ;
+}
+.contact-formleft form input{
+  height: 35px;
+  width: 100%;
+}
+.contact-formleft form textarea{
+  height: 80px;
+  width: 100%;
+  resize: none;
+}
+.contact-formright{
+  width: 60%;
+}
+
+
+
+@media only screen and (max-width:992px){
+  .contact-form{
+     justify-content: space-around;
+  }
+  .contact-formleft{
+    width: 55%;
+    margin-bottom: 20px;
+  }
+  .contact-formright{
+    width: 55%;
+  }
+
+}
+@media only screen and (max-width:768px){
+  .container {
+    width: 100%;
+  }
+  .contact-form{
+     justify-content: space-around;
+  }
+  .contact-formleft{
+    width: 100%;
+  }
+  .contact-formright{
+    width: 100%;
+  }
+
+}

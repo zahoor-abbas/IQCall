@@ -1,0 +1,70 @@
+.servicesbg {
+  background-image: url("/public/img/services.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 400px;
+}
+.service {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service .servicecard{
+  width: 24%;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border: 1px solid gray;
+
+}
+.servicecard .servicecard-text{
+  padding: 20px 40px 40px;
+}
+.servicecard .servicecard-text h2{
+  font-size: 20px;
+  font-weight: 600;
+}
+.servicecard .servicecard-text p{
+  /* font-weight: 600; */
+  line-height: 25px;
+}
+.service .servicecard img {
+  width: 100%;
+}
+.service .service-card img {
+  width: 100%;
+}
+.service-container {
+  padding: 120px 0px 90px;
+}
+@media screen and (max-width: 992px) {
+  .service .servicecard {
+    width: 32%;
+  }
+  .servicecard .servicecard-text{
+    padding: 10px 20px 20px;
+  }
+ 
+}
+
+@media screen and (max-width: 768px) {
+  .service .servicecard {
+    width: 48%;
+  }
+  .servicecard .servicecard-text{
+    padding: 10px 10px 10px;
+  }
+ 
+}
+@media screen and (max-width: 480px) {
+  .service .servicecard {
+    width: 100%;
+  }
+  .servicecard .servicecard-text{
+    padding: 0px 0px 0px;
+  }
+ 
+ 
+}
+

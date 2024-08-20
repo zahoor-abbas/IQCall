@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  color: #777777;
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+p {
+  text-align: justify;
+}
+
+/* .margintb {
+    margin: 15px 0;
+  } */
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 20px;
+}
+.scrolled {
+  background-color: white;
+}
+/* Navbar  */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 15px 10px;
+  color: #fff;
+  align-items: center;
+  position: relative;
+}
+.navbar img {
+  width: 120px;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  margin: 0 25px;
+}
+.navbar ul li a {
+  color: #fff;
+}
+.navbar .button {
+  display: flex;
+  align-items: center;
+  border: 1px solid #5b5b8c;
+  border-radius: 50px;
+}
+.navbar .button .menu {
+  display: none;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.btn {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 50px;
+  background: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.text-center {
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: #1d1d1d;
+  color: #9d9d9d;
+  overflow: hidden;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 80px 10px;
+}
+.footer1 {
+  max-width: 24%;
+  padding: 0 40px;
+}
+.footer1 img {
+  width: 120px;
+}
+
+@media screen and (max-width: 991px) {
+  /* navbar  */
+  .navbar ul {
+   display: block;
+    background-color: #6773fd;
+    width: 40%;
+    height: 100vh;
+    position: absolute;
+    left:-400px;
+    top: 0;
+    transition: 1s;
+    
+  }
+  .navbar ul.open {
+    display: block;
+    left: 0;
+  }
+ .navbar ul li{
+  margin: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: black;
+ }
+  .navbar .button button {
+    display: none;
+  }
+  .navbar .button .menu {
+    display: flex;
+    color: white;
+  }
+  .navbar .button {
+    border: none;
+  }
+  /* footer */
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer1 {
+    max-width: 100%;
+  }
+}
